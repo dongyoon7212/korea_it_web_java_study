@@ -20,7 +20,7 @@ public class DataTypes {
         System.out.println("l은" + l);
 
         //실수 - float, double
-        float f = 3.14f;
+        float f = 3.14F;
         double d = 3.14123456123456;
 
         //문자 - char
