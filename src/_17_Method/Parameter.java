@@ -16,6 +16,15 @@ public class Parameter {
         System.out.println(number + "의 " + exponent + "승은 " + result + " 입니다");
     }
 
+    public static void getAvg(int a, int b, int c) {
+        System.out.println("평균은 " + (a + b + c) / 3);
+    }
+
+    public static void isEven(int a) {
+        String result = (a % 2 == 0) ? "짝수임" : "홀수임";
+        System.out.println(result);
+    }
+
     public static void main(String[] args) {
         //Parameter
         //매개변수, 전달값
@@ -23,5 +32,14 @@ public class Parameter {
         power(num);
 
         powerByExp(2, 4);
+
+        getAvg(80, 90 ,100);
+        isEven(11);
+
     }
+
+    //세개의 정수를 전달하여 평균을 출력하는 메소드
+
+    //정수를 전달하여 짝수인지 홀수인지 판별하는 메소드
+    //단, 삼항연산자를 쓸 것
 }
