@@ -2,12 +2,12 @@ package _27_Bean;
 
 import lombok.*;
 
-@Getter
-@Setter
-@ToString
 //@NoArgsConstructor
 //@AllArgsConstructor
 //@RequiredArgsConstructor
+@Getter
+@Setter
+@ToString
 public class UserEntityLombok {
     private int userId; //final
     @NonNull
