@@ -15,5 +15,13 @@ public class Main {
         userEntity.setEmail("dongyoon7212@naver.com");
 
         System.out.println(userEntity);
+
+        UserEntityLombok userEntityLombok = new UserEntityLombok();
+        userEntityLombok.setUserId(2);
+        userEntityLombok.setUsername("홍길동");
+        userEntityLombok.setAge(18);
+        userEntityLombok.setEmail("gildong@gmail.com");
+
+        System.out.println(userEntityLombok);
     }
 }
