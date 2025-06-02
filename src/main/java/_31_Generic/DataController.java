@@ -30,5 +30,13 @@ public class DataController {
         ResponseData<UserEntityLombok> user = new ResponseData<>("유저:", userEntityLombok);
         System.out.println(user);
 
+        // product패키지
+        // ProductController.java, Product.java
+        //상품 정보,  => 상품명(productName), 상품정보(productInfo)
+        //Product(productName=Laptop, productInfo=Intel i7, 16GB RAM, 512GB SSD) String
+        //Product(productName=Smartphone, productInfo=799.99) Double
+        //Product(productName=Available, productInfo=true)    Boolean
+
+
     }
 }
