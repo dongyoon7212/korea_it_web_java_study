@@ -1,6 +1,8 @@
 package _35_Lambda;
 
 import java.util.Comparator;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 //람다식(Lambda Expression)
 //Java 8에서 도입된 '함수형 프로그래밍'을 지원하기 위한 표현식
@@ -56,7 +58,18 @@ public class Main {
         //Predicate - boolean test(T t);
         //'하나의 매개변수'를 받아서 특정 조건을 검사한 후 true/false를 리턴
 
-
-
+        //1.supplier
+        Supplier<String> stringSupplier = () -> "Hello, World";
+        //2.consumer
+        Consumer<String> stringConsumer = (message) -> System.out.println("메시지 : " + message);
+        String message = stringSupplier.get();
+        stringConsumer.accept(message);
     }
+    //익명 클래스 => 즉석에서 해당 클래스나 인터페이스의 메소드를 재정의해서 사용
+    // -------메소드가 하나일수도 여러개일수도
+    //람다식 => 메소드가 하나만 있는 인터페이스를 재정의해서 사용할때 표현식
+    // () -> 한줄 코드;
+    // () -> {
+    //      여러줄 코드
+    //  }
 }
